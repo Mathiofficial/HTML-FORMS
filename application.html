@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    
+    <h2 align="center">Application Form</h2>
+    <form  style="width: 100%; margin: 0 auto; padding: 20px; width: 500px;"action="/submit_application" method="post" >
+
+    
+    <form action="/submit_application" method="post">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend align="center" width="50%">Personal Information</legend>
+            
+            <table>
+                <tr>
+                    <td><label for="first_name">First Name:</label></td>
+                    <td><input type="text" id="first_name" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name:</label></td>
+                    <td><input type="text" id="last_name" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <!-- Address Section -->
+        <fieldset>
+            <legend>Address</legend>
+            
+            <table>
+                <tr>
+                    <td><label for="street">Street Address:</label></td>
+                    <td><input type="text" id="street" name="street" required></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" required></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State/Province:</label></td>
+                    <td><input type="text" id="state" name="state" required></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip/Postal Code:</label></td>
+                    <td><input type="text" id="zip" name="zip" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td><input type="text" id="country" name="country" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <!-- Educational Information Section -->
+        <fieldset>
+            <legend>Educational Information</legend>
+            
+            <table>
+                <tr>
+                    <td><label for="highest_degree">Highest Degree:</label></td>
+                    <td><input type="text" id="highest_degree" name="highest_degree" required></td>
+                </tr>
+                <tr>
+                    <td><label for="university">University/College:</label></td>
+                    <td><input type="text" id="university" name="university" required></td>
+                </tr>
+                <tr>
+                    <td><label for="grad_year">Year of Graduation:</label></td>
+                    <td><input type="number" id="grad_year" name="grad_year" min="1900" max="2100" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gpa">GPA/Percentage:</label></td>
+                    <td><input type="text" id="gpa" name="gpa" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <!-- Work Experience Section -->
+        <fieldset>
+            <legend>Work Experience</legend>
+            
+            <table>
+                <tr>
+                    <td><label for="company_name">Company Name:</label></td>
+                    <td><input type="text" id="company_name" name="company_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="job_title">Job Title:</label></td>
+                    <td><input type="text" id="job_title" name="job_title"></td>
+                </tr>
+                <tr>
+                    <td><label for="years_exp">Years of Experience:</label></td>
+                    <td><input type="number" id="years_exp" name="years_exp" min="0" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <!-- Submission -->
+        <div align="center">
+            <input type="submit" value="Submit Application">
+        </div>
+    </form>
+
+</body>
+</html>
